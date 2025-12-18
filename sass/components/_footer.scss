@@ -1,6 +1,6 @@
 .site-footer{
 
-    background: rgba(32, 33, 37, 1); color: white;
+    background: #202125; color: white;
 
     .grid{display: flex; align-items: flex-start; padding: 64px 0 30px; flex-wrap: wrap; justify-content: space-between;}
 
@@ -10,11 +10,40 @@
     .quick-links a{display: block; color: white; text-decoration: none; margin-bottom: 0.5rem;}
     .quick-links p{margin: 0;}
 
-    .social-icons .icon-rounded{background: black; color: white; cursor: pointer;}
+    .social-icons .icon-rounded{
+        background: linear-gradient(to bottom, rgba(white, 0.4), rgba(white, 0.2)); 
+        color: white; cursor: pointer;
+    }
 
     .app-buttons-holder{display: grid; gap: 0.5rem;}
     .app-button{display: block;}
     .app-button img{display: block;}
 
     .copyright{border-top: solid 1px rgba(128, 128, 128, 0.4); font-family: var(--font-thin); font-size: 18px; text-align: center; padding: 1rem 0;}
+}
+.modal{
+    --bs-modal-padding: 30px;
+
+    .modal-content{border-radius: px_rem(10px);}
+}
+.signin-modal{
+    --bs-modal-width: 880px;
+
+    .modal-body{display: flex; gap: 40px;}
+    .content{flex-grow: 1; display: flex; flex-direction: column; justify-content: center;}
+    .image{width: 354px; border-radius: 14px; overflow: hidden; background: #CCC;}
+    .image img{width: 100%; height: 100%; object-fit: cover;}
+
+    .forgot-link{display: block; font-family: var(--font-thin); text-align: right; font-size: px_rem(18px); line-height: px_rem(27px);}
+    .dont-have-account{text-align: center; font-family: var(--font-thin); font-size: px_rem(18px); line-height: px_rem(27px);}
+}
+.forgot-password-modal{
+    --bs-modal-padding: 46px 56px;
+    --bs-modal-width: 528px;
+}
+.change-password-modal{
+    --bs-modal-width: 530px;
+    --bs-modal-padding: 58px 48px;
+
+    .title{font-size: 24px; font-family: var(--font-medium); line-height: 1; margin-bottom: 20px;}
 }

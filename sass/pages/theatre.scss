@@ -1,3 +1,13 @@
 .theatre{
-    
+
+    .section-title{margin-bottom: px_rem(20px);}
+    .section-title:before{content: attr(data-tagline); font-family: var(--font-medium); text-transform: capitalize; padding-bottom: 1rem; display: block; color: var(--primary-color); font-size: px_rem(20px); line-height: 1;}
+
+    .grid{display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; align-items: center;}
+
+    .text{flex-grow: 1; max-width: 630px; width: 100%;}
+    .text > *:last-child{margin-bottom: 0;}
+    .image{max-width: 100%;}
+
+    .theatre_icon{margin-top: 44px; margin-left: 24px;}
 }

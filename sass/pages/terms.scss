@@ -1,4 +1,19 @@
 .terms{
     h2{margin-bottom: 1.5rem;}
-    h3{@extend .title-1; margin-bottom: 1rem; margin-top: 3rem;}
+    h3{
+        font-size: 2.75rem;
+        margin: 4rem 0 1rem;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+    ul{padding: 0; margin: 0 0 1rem;}
+    ul li{list-style-type: none; padding-left: 30px; position: relative;}
+    ul li:after{
+        content: "";
+        --size: 5px; background: black; position: absolute; left: 12px; top: 7px;
+        width: var(--size);
+        height: var(--size);
+        border-radius: var(--size);
+    }
 }

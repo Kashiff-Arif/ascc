@@ -148,7 +148,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body">
-                <form action="" class="content">
+                <form action="javascript: avoid(0)" class="content">
                     <h2 class="title">Change Password</h2>
                     <div class="form-element mb-3">
                         <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -178,8 +178,8 @@
                         <label class="control-label">New Password</label>
                         <input type="password" placeholder="************" class="form-control" />
                     </div>
-                    <div class="h-list gap-3">
-                        <button class="btn btn-outline-dark">Back</button>
+                    <div class="h-list gap-3 pt-1">
+                        <button class="btn btn-outline-dark" data-bs-dismiss="modal">Back</button>
                         <button class="btn btn-primary flex-grow-1">Change</button>
                     </div>
                 </form>
@@ -191,5 +191,7 @@
 
 <!-- Bootstrap 5 JS Bundle (includes Popper) -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker/dist/js/datepicker-full.min.js"></script>
 <!-- Optional Custom JS -->
+ 
 <script src="js/main.js"></script>

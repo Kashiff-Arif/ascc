@@ -1,0 +1,45 @@
+.profile{
+    display: grid; grid-template-columns: auto 1fr; grid-gap: 30px;
+
+    .left{width: 278px;}
+
+    .profile-image{@extend .icon-rounded; --size: 90px; background: #EEE; position: relative;}
+    .profile-image .icon{@extend .icon-rounded; --size: 28px; background: black; position: absolute; right: 0; bottom: 0;}
+    .profile-image img{width: 100%; height: 100%; border-radius: 50px; object-fit: cover;}
+    
+    .tabs{display: grid; gap: 16px;}
+    .tabs .item{
+        display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 0.75rem; color: black;
+        background: rgba(245, 247, 247, 1); padding: 1rem; min-height: 56px; font-family: var(--font-medium);
+        border-radius: 10px 0 0 10px; position: relative; cursor: pointer; font-size: px_rem(20px); line-height: 1;
+    }
+    .tabs .item span{padding-top: 2px;}
+    .tabs .item:after{content: ""; width: 2px; height: 100%; background: rgba(207, 156, 90, 1); position: absolute; top: 0; right: 0; opacity: 0; pointer-events: none;}
+    .tabs .item.active{background: rgba(207, 156, 90, 0.2); color: rgba(207, 156, 90, 1);}
+    .tabs .item.active::after{opacity: 1;}
+
+
+    .tickets-tabs{display: grid; padding: 10px; margin-bottom: 30px; background: rgba(245, 245, 245, 0.6); grid-template-columns: repeat(2, 1fr); grid-gap: 24px;}
+    .tickets-tabs .item{background: rgba(181, 181, 181, 0.2); font-size: px_rem(18px); cursor: pointer; border-radius: 10px; min-height: 52px; display: flex; align-items: center; justify-content: center; padding: 6px 15px 4px; color: black; font-family: var(--font-medium);}
+    .tickets-tabs .item.active{background: rgba(207, 156, 90, 0.2); color: rgba(207, 156, 90, 1);}
+
+    .tickets-grid{display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 36px;}
+
+    .profile-data{background: rgba(249, 249, 249, 1); padding: 34px 20px 48px;}
+    .profile-data .form-element .form-control{background: white;}
+    .profile-data .grid{display: grid; margin-bottom: 36px; grid-gap: 16px;}
+    @media (min-width: 768px) {
+        .profile-data .grid{grid-template-columns: repeat(2, 1fr); grid-gap: 26px 16px;}
+    }
+    .profile-data .action-button{max-width: 250px; width: 100%; display: flex; margin: auto;}
+
+    .phone-field .dropdown-menu .dropdown-item{cursor: pointer; display: flex; align-items: center; gap: 8px;}
+
+    .country-selector{display: flex; align-items: center; cursor: pointer; gap: 6px; position: absolute; bottom: 18px; inset-inline-end: 24px;}
+    .pass-field{grid-column: 1 / -1;}
+    .change-pass-text{
+        color: var(--primary-color); font-size: 1rem; font-family: var(--font-medium);
+        position: absolute; top: 50%; transform: translateY(-50%); inset-inline-end: 36px;
+        display: block; cursor: pointer;
+    }
+}

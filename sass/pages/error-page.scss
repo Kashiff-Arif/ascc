@@ -1,0 +1,11 @@
+.error-page{
+    .main-content{padding-top: 32px;}
+    .site-header{
+        position: relative;
+    }
+    .site-header .right{color: black;}
+    .site-header .devider{background: black;}
+    .site-header .list{gap: 20px;}
+    .site-header .sign-list{gap: 20px;}
+    .site-header .signin-link span{display: none;}
+}
