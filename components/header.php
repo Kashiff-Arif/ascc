@@ -1,6 +1,6 @@
-<div class="page-loader">
+<!-- <div class="page-loader">
     <img src="images/loader.gif" alt="" />
-</div>
+</div> -->
 <header class="site-header">
     <div class="container">
         <a href="/" class="logo"><img src="images/site_logo.png" alt="" /></a>
@@ -81,5 +81,14 @@
         </div>
     </div>
 </header>
-
+<script>
+    window.addEventListener("scroll", function () {
+  const header = document.querySelector(".site-header");
+  if (window.scrollY > 40) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+});
+</script>
 <?php include 'components/navigation.php';  ?>

@@ -1,6 +1,11 @@
 .site-header{
-    position: absolute; top: 0; left: 0; right: 0; z-index: 11; background: url(/images/header_pattern.png) center center no-repeat;
-
+    position: fixed; width:100%; top: 0; left: 0; right: 0; z-index: 11; background: url(/images/header_pattern.png) center center no-repeat;
+    padding:32px 0;
+    transition: .6s ease all;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0) 100%);
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
     &:after{
         content: ""; width: 100%; height: 100%; position: absolute; top: 0; left: 0;
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
@@ -26,10 +31,10 @@
         .search-field{opacity: 1;}
     }
 
-    .container{display: flex; min-height: 160px; position: relative; z-index: 2; align-items: center; justify-content: space-between;}
+    .container{display: flex; position: relative; z-index: 2; align-items: center; justify-content: space-between;}
 
     .logo{display: block;}
-    .logo img{max-height: 101px; animation: fadeOutIn 4s infinite forwards 0.2s;}
+    .logo img{max-height: 101px; animation: fadeOutIn 4s infinite forwards 0.2s; transition:  .5s ease all;}
     .lang-link{color: inherit; text-decoration: none;}
 
     .devider{width: 2px; height: 10px; display: block; background: white;}
@@ -38,9 +43,29 @@
     .right .btn{min-height: 50px; --bs-btn-padding-x: 1.5rem; padding-top: 9px;}
     .list{gap: px_rem(40px);}
     .nav-icon span{padding-top: 4px;}
-    .menu-list{gap: px_rem(14px);}
+    .menu-list{gap: px_rem(14px);
+    a , svg , .h-list{
+        transition: .5s ease all;
+        &:hover{
+            color: #CF9C5A;
+
+        }
+    }
+}
     .sign-list{gap: px_rem(30px);}
     .sign-list span{padding-top: 4px;}
 
     .signin-link{cursor: pointer; font-family: var(--font-medium);}
+    &.sticky{
+         background: #000 !important;
+          padding:15px 0;
+          max-width: 1200px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          .logo {
+            img{
+                max-height:70px;
+            }
+          }
+    }
 }

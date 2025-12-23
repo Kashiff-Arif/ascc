@@ -14,9 +14,9 @@
 <link rel="icon" href="favicon.ico" />
 
 <!-- Bootstrap 5 CSS -->
-<link href="../custom-bootstrap.css" rel="stylesheet" />
+<link href="custom-bootstrap.css" rel="stylesheet" />
 <link rel="stylesheet" href="../css/animate.min.css"/>
-<link rel="stylesheet" href="./css/flatpickr.min.css">
+<link rel="stylesheet" href="./css/flatpickr.min.css"> 
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="css/main.css" />

@@ -6,8 +6,15 @@
             </div>
             <div class="item quick-links last-margin-0">
                 <h4>Quick Links</h4>
-                <a href="/terms.php">Terms and Conditions</a>
-                <p>Member of ICOM - International Council of Museums</p>
+                <ul>
+                    <li>
+                        <a href="/terms.php">Terms and Conditions</a>
+                
+                    </li>
+                    <li>
+                        <a href="#">Member of ICOM - International Council of Museums</a>
+                    </li>
+                </ul>
             </div>
             <div class="item">
                 <h4>Social Contact</h4>
@@ -224,5 +231,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <!-- Optional Custom JS -->
- 
+ <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+<script src="js/animate.js"></script>
 <script src="js/main.js"></script>
