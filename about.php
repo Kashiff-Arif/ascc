@@ -265,9 +265,11 @@
                         </div>
                     </div>
                     <div class="tab-pane fade last-margin-0" id="tab4" role="tabpanel">
-                        <?php include 'components/content_row.php'; ?>
-                        <?php include 'components/content_row.php'; ?>
-                        <?php include 'components/content_row.php'; ?>
+                        <div class="content_row_holder">
+                            <?php include 'components/content_row.php'; ?>
+                            <?php include 'components/content_row.php'; ?>
+                            <?php include 'components/content_row.php'; ?>
+                        </div>
                     </div>
                 </div>
             </div>

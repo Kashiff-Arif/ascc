@@ -25,5 +25,9 @@
 
 .tickets{
     .title-1{margin-bottom: px_rem(28px);}
-    .tickets-holder{display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;}
+    .tickets-holder{
+        --gap: 32px; display: flex; flex-wrap: wrap; gap: var(--gap); justify-content: center;
+        
+        .ticket-card{width: calc(50% - (var(--gap) / 2));}
+    }
 }

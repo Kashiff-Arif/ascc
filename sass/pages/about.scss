@@ -108,7 +108,12 @@
             margin-bottom: 130px;
             
             .note{font-size: 1rem; padding: 30px 0 80px;}
-            .tickets-holder{display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;}
+            // .tickets-holder{display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;}
+            .tickets-holder{
+                --gap: 32px; display: flex; flex-wrap: wrap; gap: var(--gap); justify-content: center;
+                
+                .ticket-card{width: calc(50% - (var(--gap) / 2));}
+            }
         }
         .block3{
             .tabs-list{margin-bottom: 3rem; gap: 20px; justify-content: flex-start;}

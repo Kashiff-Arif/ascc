@@ -26,6 +26,7 @@
         </div>
         <a href="book-ticket.php" class="btn btn-primary">Book Ticket</a>
     </div>
+    <div class="devider"></div>
     <figure class="image">
         <img src="images/image.jpg" alt="" />
     </figure>

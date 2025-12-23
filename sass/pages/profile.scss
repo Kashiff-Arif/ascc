@@ -4,6 +4,7 @@
     .left{width: 278px;}
 
     .profile-image{@extend .icon-rounded; --size: 90px; background: #EEE; position: relative;}
+    .profile-image input{position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: pointer; z-index: 111; opacity: 0}
     .profile-image .icon{@extend .icon-rounded; --size: 28px; background: black; position: absolute; right: 0; bottom: 0;}
     .profile-image img{width: 100%; height: 100%; border-radius: 50px; object-fit: cover;}
     

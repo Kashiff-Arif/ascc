@@ -26,13 +26,6 @@
         .search-field{opacity: 1;}
     }
 
-    .book-now-dropdown{
-        .dropdown-item:focus,
-        .dropdown-item:hover{
-            background: transparent; color: var(--primary-color);
-        }
-    }
-
     .container{display: flex; min-height: 160px; position: relative; z-index: 2; align-items: center; justify-content: space-between;}
 
     .logo{display: block;}

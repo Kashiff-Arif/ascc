@@ -78,22 +78,22 @@
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <?php $category_type = "property"; include 'components/category_item_v2.php'; ?>
+                                <?php $category_type = "earth"; include 'components/museum_item.php'; ?>
                             </div>
                             <div class="swiper-slide">
-                                <?php $category_type = "sea"; include 'components/category_item_v2.php'; ?>
+                                <?php $category_type = "teck"; include 'components/museum_item.php'; ?>
                             </div>
                             <div class="swiper-slide">
-                                <?php $category_type = "property"; include 'components/category_item_v2.php'; ?>
+                                <?php $category_type = "human"; include 'components/museum_item.php'; ?>
                             </div>
                             <div class="swiper-slide">
-                                <?php $category_type = "property"; include 'components/category_item_v2.php'; ?>
+                                <?php $category_type = "earth"; include 'components/museum_item.php'; ?>
                             </div>
                             <div class="swiper-slide">
-                                <?php $category_type = "property"; include 'components/category_item_v2.php'; ?>
+                                <?php $category_type = "teck"; include 'components/museum_item.php'; ?>
                             </div>
                             <div class="swiper-slide">
-                                <?php $category_type = "property"; include 'components/category_item_v2.php'; ?>
+                                <?php $category_type = "human"; include 'components/museum_item.php'; ?>
                             </div>
                         </div>
                     </div>

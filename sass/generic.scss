@@ -116,6 +116,7 @@ p{font-family: var(--font-thin);}
 @import "components/footer";
 @import "components/ticket_card";
 @import "components/category_item";
+@import "components/museum_item";
 @import "components/content_row";
 
 .pagination{
@@ -162,9 +163,9 @@ strong{font-family: var(--font-medium); font-weight: normal;}
     position: relative; flex-grow: 1;
 
     .icon{position: absolute; top: 50%; transform: translateY(-50%); left: px_rem(26px);}
-    .form-control{height: 65px; font-size: px_rem(18px); font-family: var(--font-light); padding: 4px 26px 4px 62px; background: rgba(245, 245, 245, 1); border: 0; border-radius: 50px;}
-    .form-control::-moz-placeholder{color: black; opacity: 1;}
-    .form-control::-webkit-input-placeholder{color: black; opacity: 1;}
+    .form-control{height: 65px; font-size: px_rem(18px); font-family: var(--font-medium); padding: 4px 26px 4px 62px; background: rgba(245, 245, 245, 1); border: 0; border-radius: 50px;}
+    .form-control::-moz-placeholder{color: black; opacity: 1; font-family: var(--font-light);}
+    .form-control::-webkit-input-placeholder{color: black; opacity: 1; font-family: var(--font-light);}
 }
 
 .tabs-list{gap: 14px; margin-bottom: 3rem; justify-content: center; flex-wrap: wrap;}
@@ -228,10 +229,10 @@ strong{font-family: var(--font-medium); font-weight: normal;}
 .dropdown-menu{
     --bs-dropdown-item-padding-y: 4px;
     --bs-dropdown-min-width: 12rem;
-    --bs-dropdown-link-hover-bg: var(--primary-color);
-    --bs-dropdown-link-hover-color: white;
+    --bs-dropdown-link-hover-bg: transparent;
+    --bs-dropdown-link-hover-color: var(--primary-color);
     
-    padding: 1rem 0; border-radius: 7px; border: 0; font-size: inherit; line-height: inherit;
+    padding: 1rem 0; border-radius: 7px; font-size: inherit; line-height: inherit;
 
     .dropdown-item{font-family: var(--font-thin); font-size: px_rem(18px); line-height: 1; display: grid; grid-template-columns: auto 1fr; gap: 6px; align-items: center;}
     .dropdown-item span{padding-top: 2px;}

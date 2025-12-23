@@ -3,7 +3,7 @@
     <head>
         <?php include 'components/head.php';  ?>
     </head>
-    <body>
+    <body class="visitor-map-page">
         <?php
             $title = "Visitor Map";
             $image = "images/visitor-map-banner.jpg";
