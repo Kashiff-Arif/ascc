@@ -177,3 +177,15 @@ const ascc_app = {
         numEl.innerText = value;
     }
 };
+
+const header = document.querySelector(".site-header");
+const toggleClass = "is-sticky";
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll > 150) {
+    header.classList.add(toggleClass);
+  } else {
+    header.classList.remove(toggleClass);
+  }
+});

@@ -92,6 +92,17 @@ document.querySelectorAll(".animate-slider").forEach((sliderSection) => {
   });
 });
 
+gsap.to(".page-title-banner img", {
+    scale: 1.2,       // zoom effect
+    yPercent: 10,     // subtle parallax
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".page-title-banner",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true
+    }
+});
 
 
 

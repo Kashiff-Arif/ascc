@@ -6,8 +6,23 @@
 
     h4{font-weight: 500; font-family: var(--font-medium); margin-bottom: 12px; font-size: px_rem(20px); line-height: px_rem(20px);}
     
-    .quick-links{font-size: 18px; line-height: 1; max-width: 276px; width: 100%;}
-    .quick-links a{display: block; text-decoration: none; margin-bottom: 0.5rem;}
+    .quick-links{font-size: 18px; line-height: 1; max-width: 276px; width: 100%;
+    
+        ul{
+            list-style: none;
+            padding:0;
+            margin:0;
+            li{
+                line-height: 1.4;
+                &:not(:last-child){
+                    margin-bottom:8px;
+                }
+                a{
+                    display: block; text-decoration: none;
+                }
+            }
+        }
+    }
     .quick-links a:not(:hover) {color: white;}
     .quick-links p{margin: 0;}
 

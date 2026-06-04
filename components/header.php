@@ -19,7 +19,7 @@
                             <path d="M0.75 5.25H16.42M16.42 5.25L11.4716 0.75M16.42 5.25L11.4716 9.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <svg class="search-icon cursor-pointer" onclick="document.body.classList.add('search-opened')" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="search-icon cursor-pointer" onclick="document.body.classList.toggle('search-opened')" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.6017 15.6002L11.9826 11.981M11.9826 11.981C12.6016 11.3619 13.0927 10.627 13.4278 9.81813C13.7628 9.00927 13.9352 8.14234 13.9352 7.26684C13.9352 6.39133 13.7628 5.52441 13.4278 4.71555C13.0927 3.90669 12.6016 3.17174 11.9826 2.55267C11.3635 1.9336 10.6285 1.44252 9.81969 1.10748C9.01083 0.772441 8.1439 0.599998 7.2684 0.599998C6.3929 0.599998 5.52597 0.772441 4.71711 1.10748C3.90825 1.44252 3.17331 1.9336 2.55423 2.55267C1.30396 3.80294 0.601562 5.49868 0.601562 7.26684C0.601563 9.03499 1.30396 10.7307 2.55423 11.981C3.80451 13.2313 5.50025 13.9337 7.2684 13.9337C9.03656 13.9337 10.7323 13.2313 11.9826 11.981Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     <span class="devider"></span>
@@ -81,14 +81,4 @@
         </div>
     </div>
 </header>
-<script>
-    window.addEventListener("scroll", function () {
-  const header = document.querySelector(".site-header");
-  if (window.scrollY > 40) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-});
-</script>
 <?php include 'components/navigation.php';  ?>

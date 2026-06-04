@@ -4,7 +4,7 @@
     }
     .enter-the-center{
         position: relative;
-        z-index:2;
+        z-index:3;  
         &:after{content: ""; background: rgba(black, 0.45); width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 0;}
     
         .title{color: white; margin: 0; text-align: center; font-family: var(--font-light); z-index: 11; font-size: px_rem(36px); line-height: 44px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
@@ -135,5 +135,15 @@
 
     .contact{
         background: #25262a url(/images/contact-top-pattern.jpg) center top repeat-x;
+    }
+
+    @media screen and (max-width:767px){
+        .camera-mobile-view {
+            .object-item {
+                .tree{
+                    max-height: 320px;
+                }
+            }
+        }
     }
 }

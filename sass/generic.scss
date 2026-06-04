@@ -87,7 +87,7 @@ a:hover{color: rgb(203, 138, 52);}
 .h-list{display: flex; align-items: center;}
 
 .title-1{font-size: px_rem(44px); margin: 0; line-height: 1; text-transform: uppercase;}
-.section-title{font-size: px_rem(44px); line-height: 1; font-family: var(--font-thin); margin: 0; text-transform: uppercase;}
+.section-title{font-size: px_rem(44px); line-height: 1; font-family: var(--font-light); margin: 0; text-transform: uppercase;}
 
 .pointer-events-none{pointer-events: none !important;}
 
@@ -110,7 +110,9 @@ a:hover{color: rgb(203, 138, 52);}
     --bs-btn-active-color: white;
 }
 
-.main-content{padding: 3rem 0 5rem; position: relative;}
+.main-content{
+    padding: 3rem 0; 
+    position: relative;}
 
 
 .content-modal{
@@ -186,7 +188,7 @@ strong{font-family: var(--font-medium); font-weight: normal;}
 }
 
 .tabs-list{gap: 14px; margin-bottom: 3rem; justify-content: center; flex-wrap: wrap;}
-.tabs-list .btn{--bs-btn-padding-x: 30px; padding-top: 10px;}
+.tabs-list .btn{--bs-btn-padding-x: 30px;}
 .tabs-list .btn.active,
 .tabs-list .btn:hover{
     background: var(--primary-color); border-color: var(--primary-color);
@@ -334,4 +336,9 @@ strong{font-family: var(--font-medium); font-weight: normal;}
 
 .echo-modal-video{
     video{height: 300px; width: 100%; border: 0; object-fit: cover;}
+}
+
+.reveal{
+    overflow: hidden;
+    position: relative;
 }

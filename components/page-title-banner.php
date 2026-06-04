@@ -1,11 +1,10 @@
 <div class="page-title-banner <?= isset($classes) ? $classes : '' ?>">
-    <?php include 'components/header.php';  ?>
     <?php if(isset($video)) { ?>
         <video class="video" autoplay muted loop playsinline>
             <source src="<?= $video ?>" type="video/mp4">
         </video>
     <?php } else { ?>
-        <img class="image" src="<?= $image ?>" alt="" />
+        <img class="image" src="<?= $image ?>" alt=""  class="img-fluid" loading="lazy">
     <?php } ?>
     <div class="content">
         <div class="container">
